@@ -4,206 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FIMS Master Review</title>
-
     <style>
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background: #f4f7fb;
-            color: #1f2937;
-        }
-
-        header {
-            background: white;
-            padding: 28px 50px;
-            border-bottom: 1px solid #e5e7eb;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 34px;
-        }
-
-        header p {
-            margin: 8px 0 0;
-            color: #6b7280;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 40px auto;
-            padding: 0 24px;
-        }
-
-        .section-title {
-            font-size: 22px;
-            margin-bottom: 18px;
-        }
-
-        .course-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 22px;
-        }
-
-        .course-card {
-            background: white;
-            border-radius: 16px;
-            padding: 28px;
-            box-shadow: 0 4px 14px rgba(0,0,0,0.06);
-            border: 1px solid #e5e7eb;
-        }
-
-        .course-card h2 {
-            margin-top: 0;
-            font-size: 24px;
-        }
-
-        .course-card p {
-            color: #6b7280;
-            line-height: 1.5;
-        }
-
-        .week-list {
-            margin-top: 18px;
-        }
-
-        .week {
-            display: block;
-            padding: 12px 14px;
-            margin-top: 10px;
-            background: #f8fafc;
-            border-radius: 10px;
-            text-decoration: none;
-            color: #1f2937;
-            border: 1px solid #e5e7eb;
-        }
-
-        .week:hover {
-            background: #eef2f7;
-        }
-
-        .review-modes {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 16px;
-            margin-bottom: 34px;
-        }
-
-        .mode-card {
-            background: white;
-            border-radius: 14px;
-            padding: 20px;
-            border: 1px solid #e5e7eb;
-        }
-
-        .mode-card h3 {
-            margin-top: 0;
-        }
-
-        .mode-card p {
-            color: #6b7280;
-            margin-bottom: 0;
-        }
-
-        @media (max-width: 800px) {
-            .course-grid,
-            .review-modes {
-                grid-template-columns: 1fr;
-            }
-
-            header {
-                padding: 24px;
-            }
-        }
+        body { margin:0; font-family:Arial,Helvetica,sans-serif; background:#f4f7fb; color:#1f2937; }
+        header { background:white; padding:28px 50px; border-bottom:1px solid #e5e7eb; }
+        header h1 { margin:0; font-size:34px; } header p { margin:8px 0 0; color:#6b7280; }
+        .container { max-width:1200px; margin:40px auto; padding:0 24px; }
+        .section-title { font-size:22px; margin-bottom:18px; }
+        .course-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:22px; }
+        .course-card { background:white; border-radius:16px; padding:28px; box-shadow:0 4px 14px rgba(0,0,0,.06); border:1px solid #e5e7eb; }
+        .course-card h2 { margin-top:0; font-size:24px; } .course-card p { color:#6b7280; line-height:1.5; }
+        .week-list { margin-top:18px; } .week { display:block; padding:12px 14px; margin-top:10px; background:#f8fafc; border-radius:10px; text-decoration:none; color:#1f2937; border:1px solid #e5e7eb; }
+        .week:hover { background:#eef2f7; }
+        .review-modes { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-bottom:34px; }
+        .mode-card { background:white; border-radius:14px; padding:20px; border:1px solid #e5e7eb; } .mode-card h3 { margin-top:0; } .mode-card p { color:#6b7280; margin-bottom:0; }
+        @media(max-width:800px){.course-grid,.review-modes{grid-template-columns:1fr}header{padding:24px}}
     </style>
 </head>
-
 <body>
-
-<header>
-    <h1>FIMS Master Review</h1>
-    <p>Cumulative exam review for Biochemistry, Genetics, Physiology, and Anatomy</p>
-</header>
-
+<header><h1>FIMS Master Review</h1><p>Cumulative exam review for Biochemistry, Genetics, Physiology, and Anatomy</p></header>
 <div class="container">
-
-    <h2 class="section-title">Review Modes</h2>
-
-    <div class="review-modes">
-
-        <div class="mode-card">
-            <h3>Master Review</h3>
-            <p>Complete Level 3 exam-ready notes for each lecture.</p>
-        </div>
-
-        <div class="mode-card">
-            <h3>Rapid Review</h3>
-            <p>High-yield concepts for quick nightly and pre-exam review.</p>
-        </div>
-
-        <div class="mode-card">
-            <h3>Active Recall</h3>
-            <p>Test yourself before revealing the answers.</p>
-        </div>
-
-    </div>
-
-    <h2 class="section-title">Courses</h2>
-
-    <div class="course-grid">
-
-        <div class="course-card">
-            <h2>Biochemistry</h2>
-            <p>Pathways, enzymes, regulation, clinical correlations, and metabolic concepts.</p>
-
-            <div class="week-list">
-                <a class="week" href="#">Week 1</a>
-                <a class="week" href="biochem/week2.html">Week 2 — Acids, Bases & Buffers</a>
-                <a class="week" href="biochem/week3.html">Week 3 — Carbohydrates</a>
-                <a class="week" href="#">Week 4</a>
-            </div>
-        </div>
-
-        <div class="course-card">
-            <h2>Genetics / Molecular & Cell Biology</h2>
-            <p>DNA, gene regulation, molecular mechanisms, replication, and cell biology.</p>
-
-            <div class="week-list">
-                <a class="week" href="#">Week 1</a>
-                <a class="week" href="#">Week 2</a>
-                <a class="week" href="#">Week 3</a>
-                <a class="week" href="#">Week 4</a>
-            </div>
-        </div>
-
-        <div class="course-card">
-            <h2>Physiology</h2>
-            <p>Systems physiology, mechanisms, regulation, feedback, and clinical application.</p>
-
-            <div class="week-list">
-                <a class="week" href="#">Week 1</a>
-                <a class="week" href="#">Week 2</a>
-                <a class="week" href="#">Week 3</a>
-                <a class="week" href="#">Week 4</a>
-            </div>
-        </div>
-
-        <div class="course-card">
-            <h2>Anatomy</h2>
-            <p>Regional anatomy, innervation, blood supply, actions, clinical correlations, and images.</p>
-
-            <div class="week-list">
-                <a class="week" href="#">Week 1</a>
-                <a class="week" href="#">Week 2</a>
-                <a class="week" href="#">Week 3</a>
-                <a class="week" href="#">Week 4</a>
-            </div>
-        </div>
-
-    </div>
-
-</div>
-
-</body>
-</html>
+<h2 class="section-title">Review Modes</h2>
+<div class="review-modes"><div class="mode-card"><h3>Master Review</h3><p>Complete Level 3 exam-ready notes for each lecture.</p></div><div class="mode-card"><h3>Rapid Review</h3><p>High-yield concepts for quick nightly and pre-exam review.</p></div><div class="mode-card"><h3>Active Recall</h3><p>Test yourself before revealing the answers.</p></div></div>
+<h2 class="section-title">Courses</h2>
+<div class="course-grid">
+<div class="course-card"><h2>Biochemistry</h2><p>Pathways, enzymes, regulation, clinical correlations, and metabolic concepts.</p><div class="week-list"><a class="week" href="#">Week 1</a><a class="week" href="biochem/week2.html">Week 2 — Acids, Bases & Buffers</a><a class="week" href="biochem/week3.html">Week 3 — Carbohydrates</a><a class="week" href="biochem/week4.html">Week 4 — Lipids & Membranes</a></div></div>
+<div class="course-card"><h2>Genetics / Molecular & Cell Biology</h2><p>DNA, gene regulation, molecular mechanisms, replication, and cell biology.</p><div class="week-list"><a class="week" href="#">Week 1</a><a class="week" href="#">Week 2</a><a class="week" href="#">Week 3</a><a class="week" href="#">Week 4</a></div></div>
+<div class="course-card"><h2>Physiology</h2><p>Systems physiology, mechanisms, regulation, feedback, and clinical application.</p><div class="week-list"><a class="week" href="#">Week 1</a><a class="week" href="#">Week 2</a><a class="week" href="#">Week 3</a><a class="week" href="#">Week 4</a></div></div>
+<div class="course-card"><h2>Anatomy</h2><p>Regional anatomy, innervation, blood supply, actions, clinical correlations, and images.</p><div class="week-list"><a class="week" href="#">Week 1</a><a class="week" href="#">Week 2</a><a class="week" href="#">Week 3</a><a class="week" href="#">Week 4</a></div></div>
+</div></div>
+</body></html>
